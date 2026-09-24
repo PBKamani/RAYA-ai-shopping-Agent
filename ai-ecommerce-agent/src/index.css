@@ -1,0 +1,92 @@
+:root {
+  /* Ultra-clean Light Off-White Minimalist Palette */
+  --bg-primary: #FAF9F6;
+  --bg-secondary: #F4F3EE;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FDFCFA;
+  --bg-subtle: #ECEAE3;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.18);
+  --border-active: #1A1917;
+
+  /* Typography & Colors */
+  --text-primary: #1A1917;
+  --text-secondary: #595752;
+  --text-muted: #8A8780;
+  --text-faint: #B5B2AB;
+
+  /* Minimalist Accents */
+  --accent-charcoal: #2A2927;
+  --accent-stone: #E2DED6;
+  --accent-champagne: #C2B6A6;
+  --accent-olive: #55594F;
+
+  /* Status Colors (Muted & Minimal) */
+  --status-green: #2E5A44;
+  --status-green-bg: #EAF2ED;
+  --status-red: #8B3A3A;
+  --status-red-bg: #F9ECEC;
+
+  /* Shadows */
+  --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.03);
+  --shadow-elevated: 0 10px 30px -8px rgba(0, 0, 0, 0.07);
+  --shadow-drawer: -10px 0 40px rgba(0, 0, 0, 0.08);
+
+  /* Typography Stacks */
+  --font-editorial: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  font-family: var(--font-editorial);
+  color-scheme: light;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+/* Base button resets */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
